@@ -1,0 +1,148 @@
+/*html*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    li{list-style-type:none}
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="3.css">
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p>计算机参考资料:</p>
+<button onclick="window.location.href = 'https://fangfa.xuexila.com/gaokaofudao/80533.html'">计算机专业介绍</button>
+<button onclick="window.location.href = 'https://baike.so.com/doc/1149425-1215939.html'">计算机专业</button>
+<button onclick="window.location.href = 'https://wenku.so.com/d/018ee600598e57db7bacea365783a829'">对计算机专业认识</button>
+<br/>
+<br/>
+<p>我对计算机专业的认识：</p>
+计算机专业是理论性和实践性都很强的专业。论理论性，例如编代码，如何让编码更加简洁、计算机
+运行起来更快，解决这个问题 无疑需要很好的数理逻辑；程序员打代码则是实践性一个很好的例子。
+计算机专业的就业方向也很多，在人工智能，软件开发，信息管理等等领域都离不开计算机。计算机
+运行原理也是我特别感兴趣的方面。计算机计算速度为何这么快？一个小小的芯片怎么能集合那么
+晶体管而且能正常工作？这些都是我想要弄明白的问题。
+<br/>
+<br/>
+<p>学业规划</p>
+我打算在大学四年学习掌握一门计算机编程语言。我认为计算机编程语言对于当下的大学生可能已经
+成为一种必须的工具，掌握一门编程语言很重要。我也打算抽时间学习一下计算机运行的原理，了解
+一下计算机是如何工作的。
+</body>
+</html>
+
+
+
+/*css*/
+/*自己研究动画研究一下午，还是不熟悉，加注释提醒自己，希望老师能理解*/
+*{
+  margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 20pt;
+    color: red;
+    font-family: "华文隶书 ";
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient() ;
+    background-color:cornsilk;
+    justify-content: center;
+    align-content: center;
+}
+ul{
+    height:200px;
+    display:flex;
+
+}
+li{
+    height:20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color:red;
+    margin-right:20px;
+}
+li:nth-child(1){
+    background-color: crimson;
+    animation: s1 5s 0s infinite ;/*时间4秒，延迟0秒，循环动画*/
+}
+li:nth-child(2){
+    background-color: blueviolet;
+    animation: s3 5s 400ms infinite ;
+}
+li:nth-child(3){
+    background-color: darkorange;
+    animation: s3 5s  800ms infinite ;
+}
+li:nth-child(4){
+    background-color: salmon;
+    animation: s2 5s 1200ms infinite ;
+}
+li:nth-child(5){
+    background-color: lightseagreen;
+    animation: s2 5s 1600ms infinite ;
+}
+li:nth-child(6){
+    background-color: deeppink;
+    animation: s2 5s 2s infinite ;
+}
+li:nth-child(7){
+    background-color: aquamarine;
+    animation: s3 5s  2400ms infinite ;
+}
+li:nth-child(8){
+    background-color: khaki;
+    animation: s3 5s 2800ms infinite ;
+}
+li:nth-child(9) {
+    background-color: firebrick;
+    animation: s1 5s 3200ms infinite ;
+}
+@keyframes s1 { /*加动画*/
+    35%,55% {
+        height: 100px;
+        transform: translateY(-40px);
+    }
+    75%,100%{
+        height:0px;
+        transform:translateY(0px) ;
+    }
+
+}
+@keyframes s2 {
+    35%,55% {
+        height: 140px;
+        transform: translateY(-50px);
+    }
+    75%,100%{
+        height:0px;
+        transform:translateY(0px) ;
+    }
+
+}
+@keyframes s3 {
+    35%,55% {
+        height: 120px;
+        transform: translateY(-45px);
+    }
+    75%,100%{
+        height:0px;
+        transform:translateY(0px) ;
+    }
+
+}
